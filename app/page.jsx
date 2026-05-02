@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           </div>
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl">
-            <img src="/images/hero.jpg" alt="Luxury Montana Garage" className="h-[520px] w-full rounded-[1.5rem] object-cover" />
+            <img src="/hero.jpg" alt="Luxury Montana Garage" className="h-[520px] w-full rounded-[1.5rem] object-cover" />
           </div>
         </div>
       </section>
@@ -95,9 +95,9 @@ export default function Home() {
           <p className="text-sm uppercase tracking-[0.25em] text-gray-400">Our Work</p>
           <h2 className="mt-4 text-4xl font-bold md:text-5xl">See the difference.</h2>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            <img src="/images/gallery-1.jpg" alt="Gallery 1" className="rounded-3xl w-full h-64 object-cover" />
-            <img src="/images/gallery-2.jpg" alt="Gallery 2" className="rounded-3xl w-full h-64 object-cover" />
-            <img src="/images/gallery-3.jpg" alt="Gallery 3" className="rounded-3xl w-full h-64 object-cover" />
+            <img src="/gallery-1.jpg" alt="Gallery 1" className="rounded-3xl w-full h-64 object-cover" />
+            <img src="/gallery-2.jpg" alt="Gallery 2" className="rounded-3xl w-full h-64 object-cover" />
+            <img src="/gallery-3.jpg" alt="Gallery 3" className="rounded-3xl w-full h-64 object-cover" />
           </div>
         </div>
       </section>
