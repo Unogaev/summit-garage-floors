@@ -47,15 +47,11 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <div>
-            <div className="text-sm font-semibold tracking-[0.25em]">
-              SUMMIT GARAGE FLOORS
-            </div>
-            <div className="mt-1 text-xs text-gray-400">
-              Luxury Garage Floor Systems
-            </div>
-          </div>
+        <img
+  src="/images/hero.jpg"
+  alt="Luxury Montana Garage"
+  className="h-[520px] w-full rounded-[1.5rem] object-cover"
+/>
 
           <nav className="hidden gap-8 text-sm text-gray-300 md:flex">
             <a href="#finishes">Finishes</a>
