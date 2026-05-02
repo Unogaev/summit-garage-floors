@@ -94,3 +94,102 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <p className="text-sm uppercase tracking-[0.25em] text-gray-400">Our Work</p>
           <h2 className="mt-4 text-4xl font-bold md:text-5xl">See the difference.</h2>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <img src="/images/gallery-1.jpg" alt="Gallery 1" className="rounded-3xl w-full h-64 object-cover" />
+            <img src="/images/gallery-2.jpg" alt="Gallery 2" className="rounded-3xl w-full h-64 object-cover" />
+            <img src="/images/gallery-3.jpg" alt="Gallery 3" className="rounded-3xl w-full h-64 object-cover" />
+          </div>
+        </div>
+      </section>
+
+      <section id="process" className="border-t border-white/10 bg-white px-6 py-20 text-black">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-sm uppercase tracking-[0.25em] text-gray-500">Our Process</p>
+          <h2 className="mt-4 text-4xl font-bold md:text-5xl">A premium result starts with preparation.</h2>
+          <div className="mt-12 grid gap-5 md:grid-cols-5">
+            {["Private Consultation","Diamond Grinding","Concrete Repair","Designer Flake System","Clear Protective Coat"].map((step, i) => (
+              <div key={step} className="rounded-3xl border border-black/10 bg-gray-50 p-6">
+                <div className="text-3xl font-bold">0{i + 1}</div>
+                <div className="mt-4 font-semibold">{step}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" className="border-t border-white/10 px-6 py-20">
+        <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2">
+          <div>
+            <p className="text-sm uppercase tracking-[0.25em] text-gray-400">Premium Project Pricing</p>
+            <h2 className="mt-4 text-4xl font-bold md:text-5xl">Built for quality, not the lowest bid.</h2>
+            <p className="mt-6 text-lg leading-relaxed text-gray-300">Every garage is different. Pricing depends on square footage, concrete condition, crack repair, moisture, finish selection, and project complexity.</p>
+          </div>
+          <div className="rounded-3xl bg-white p-8 text-black">
+            <div className="text-sm uppercase tracking-[0.2em] text-gray-500">Typical premium range</div>
+            <div className="mt-4 text-5xl font-bold">$6–$12+</div>
+            <div className="mt-2 text-gray-600">per sq. ft.</div>
+            <div className="mt-8 space-y-3 text-gray-700">
+              <p>• Luxury polyaspartic systems</p>
+              <p>• Designer flake finish</p>
+              <p>• Concrete preparation and repair</p>
+              <p>• Custom quote after project review</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-white/10 px-6 py-20">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-sm uppercase tracking-[0.25em] text-gray-400">Serving Montana</p>
+          <h2 className="mt-4 text-4xl font-bold md:text-5xl">Premium garage floor coatings for Montana luxury homes.</h2>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+            {cities.map((city) => (
+              <div key={city} className="rounded-2xl border border-white/10 bg-white/5 p-5">{city}</div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-white/10 bg-white px-6 py-20 text-black">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-sm uppercase tracking-[0.25em] text-gray-500">FAQ</p>
+          <h2 className="mt-4 text-4xl font-bold md:text-5xl">Questions premium homeowners ask.</h2>
+          <div className="mt-10 space-y-5">
+            {faqs.map((faq) => (
+              <div key={faq.q} className="rounded-3xl border border-black/10 bg-gray-50 p-6">
+                <h3 className="text-xl font-bold">{faq.q}</h3>
+                <p className="mt-3 leading-relaxed text-gray-700">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="quote" className="border-t border-white/10 px-6 py-24">
+        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-2">
+          <div>
+            <p className="text-sm uppercase tracking-[0.25em] text-gray-400">Private Estimate</p>
+            <h2 className="mt-4 text-4xl font-bold md:text-5xl">Tell us about your garage.</h2>
+            <p className="mt-6 text-lg leading-relaxed text-gray-300">Send your city, garage size, and a few photos. We'll help you choose a premium finish and estimate the right system for your home.</p>
+            <div className="mt-8 text-gray-400">
+              Call/Text: <span className="text-white">(786) 708-5686</span><br />
+              Email: <span className="text-white">hello@summitgaragefloors.com</span>
+            </div>
+          </div>
+          <form className="space-y-4 rounded-3xl bg-white p-8 text-black">
+            <input className="w-full rounded-xl border p-4" placeholder="Name" />
+            <input className="w-full rounded-xl border p-4" placeholder="Phone" />
+            <input className="w-full rounded-xl border p-4" placeholder="City" />
+            <input className="w-full rounded-xl border p-4" placeholder="Garage size, e.g. 2-car / 800 sq ft" />
+            <textarea className="min-h-32 w-full rounded-xl border p-4" placeholder="Tell us about your project" />
+            <button className="w-full rounded-xl bg-black p-4 font-semibold text-white">Request Private Estimate</button>
+          </form>
+        </div>
+      </section>
+
+      <footer className="border-t border-white/10 px-6 py-10 text-center text-sm text-gray-500">
+        © 2026 Summit Garage Floors. Luxury garage floor coating systems for premium Montana homes.
+      </footer>
+    </main>
+  );
+}
