@@ -1,3 +1,4 @@
+"use client";
 const cities = [
   "Bozeman", "Billings", "Missoula", "Whitefish",
   "Helena", "Kalispell", "Big Sky", "Livingston",
