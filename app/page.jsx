@@ -352,10 +352,3 @@ export default function Home() {
       </footer>
     </main>
   );
-}<section className="px-6 py-20">
-  <div className="mx-auto max-w-7xl grid md:grid-cols-3 gap-6">
-    <img src="/images/gallery-1.jpg" className="rounded-3xl w-full h-64 object-cover" />
-    <img src="/images/gallery-2.jpg" className="rounded-3xl w-full h-64 object-cover" />
-    <img src="/images/gallery-3.jpg" className="rounded-3xl w-full h-64 object-cover" />
-  </div>
-</section>
