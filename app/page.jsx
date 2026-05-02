@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           </div>
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl">
-            <img src="/hero.jpg" alt="Luxury Montana Garage" className="h-[520px] w-full rounded-[1.5rem] object-cover" />
+            <img src="/hero.png" alt="Luxury Montana Garage" className="h-[520px] w-full rounded-[1.5rem] object-cover" />
           </div>
         </div>
       </section>
