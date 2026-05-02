@@ -190,6 +190,22 @@ export default function Home() {
       <footer className="border-t border-white/10 px-6 py-10 text-center text-sm text-gray-500">
         © 2026 Summit Garage Floors. Luxury garage floor coating systems for premium Montana homes.
       </footer>
-    </main>
+    {/* Floating CTA */}
+<div className="fixed bottom-6 right-6 z-50">
+  <button
+    onClick={() => document.getElementById('float-form').classList.toggle('hidden')}
+    className="rounded-2xl bg-white px-6 py-4 text-sm font-bold text-black shadow-2xl"
+  >
+    Get Free Quote
+  </button>
+  <div id="float-form" className="hidden absolute bottom-16 right-0 w-80 rounded-3xl bg-zinc-900 border border-white/10 p-6 shadow-2xl">
+    <div className="text-lg font-bold mb-1">Get a Free Estimate</div>
+    <p className="text-xs text-gray-400 mb-4">We'll respond within 1 business day.</p>
+    <input className="w-full rounded-xl bg-white/10 border border-white/10 p-3 text-sm text-white placeholder-gray-500 mb-3" placeholder="Your Name" />
+    <input className="w-full rounded-xl bg-white/10 border border-white/10 p-3 text-sm text-white placeholder-gray-500 mb-3" placeholder="Phone Number" />
+    <input className="w-full rounded-xl bg-white/10 border border-white/10 p-3 text-sm text-white placeholder-gray-500 mb-4" placeholder="Garage size, e.g. 800 sq ft" />
+    <button className="w-full rounded-xl bg-white py-3 text-sm font-bold text-black">Send Request</button>
+  </div>
+</div></main>
   );
 }
