@@ -24,7 +24,7 @@ export default function BigSkyPage() {
         </h1>
 
         <p className="text-gray-400 text-base leading-relaxed mb-16 max-w-xl">
-          Big Sky Resort properties and the surrounding mountain community represent some of the most valuable real estate in Montana. The garage floor is an often-overlooked opportunity to add a premium finish that protects your investment.
+          Big Sky Resort properties represent some of the most valuable real estate in Montana. A premium garage floor coating protects your investment and transforms the space.
         </p>
 
         <div className="space-y-12 text-gray-300 text-sm leading-relaxed">
@@ -41,7 +41,7 @@ export default function BigSkyPage() {
               {[
                 { title: "Diamond Grinding", desc: "Creates the proper surface profile for maximum coating adhesion." },
                 { title: "Moisture Vapor Testing", desc: "Critical at elevation where concrete holds more moisture than expected." },
-                { title: "Crack Repair & Leveling", desc: "All cracks and imperfections filled before coating." },
+                { title: "Crack Repair and Leveling", desc: "All cracks and imperfections filled before coating." },
                 { title: "Full Polyurea Base Coat", desc: "Flexible, permanent bond to concrete — handles extreme temperature swings." },
                 { title: "Designer Finish Layer", desc: "Flake or metallic finish in your choice of color." },
                 { title: "UV-Stable Polyaspartic Topcoat", desc: "100% UV stable — will not yellow regardless of sun exposure." },
@@ -59,7 +59,7 @@ export default function BigSkyPage() {
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl text-white font-light mb-4">Popular Finishes for Mountain Properties</h2>
+            <h2 className="font-serif text-2xl text-white font-light mb-4">Popular Finishes</h2>
             <div className="space-y-4">
               {[
                 { name: "Midnight Stone", desc: "Black and charcoal flake — the dramatic choice for ski chalet garages and collector spaces." },
@@ -68,3 +68,45 @@ export default function BigSkyPage() {
               ].map((f) => (
                 <div key={f.name} className="border border-white/[0.07] rounded-sm p-4">
                   <div className="font-serif text-white text-lg mb-1">{f.name}</div>
+                  <p className="text-gray-500 text-xs leading-relaxed">{f.desc}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section>
+            <h2 className="font-serif text-2xl text-white font-light mb-4">Project Pricing</h2>
+            <div className="space-y-2">
+              {[
+                { size: "1-car garage (~200 sq ft)", price: "$1,400 – $2,400" },
+                { size: "2-car garage (~480 sq ft)", price: "$3,360 – $5,760" },
+                { size: "3-car garage (~720 sq ft)", price: "$5,040 – $8,640" },
+                { size: "Oversized / custom", price: "Contact us" },
+              ].map((item) => (
+                <div key={item.size} className="flex justify-between items-center py-3 border-b border-white/[0.07]">
+                  <span className="text-gray-400">{item.size}</span>
+                  <span className="font-serif text-[#C8A96E] text-lg">{item.price}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+
+        </div>
+
+        <div className="mt-16 p-8 border border-[#C8A96E]/20 rounded-sm bg-[#C8A96E]/[0.03]">
+          <div className="font-serif text-2xl text-white font-light mb-2">Get a Free Estimate in Big Sky</div>
+          <p className="text-gray-500 text-sm mb-6">We visit your property, assess your concrete, and give you an honest quote. No pressure.</p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a href="tel:+17867085686" className="text-[11px] tracking-[0.16em] uppercase bg-[#C8A96E] text-black px-8 py-4 rounded-sm hover:bg-[#8B6E3E] hover:text-white transition-all text-center">Call (786) 708-5686</a>
+            <a href="mailto:hello@summitgaragefloors.com" className="text-[11px] tracking-[0.16em] uppercase border border-white/20 text-white px-8 py-4 rounded-sm hover:border-[#C8A96E] transition-all text-center">Email Us</a>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-white/[0.07]">
+          <Link href="/blog" className="text-[#C8A96E] text-[10px] tracking-[0.2em] uppercase hover:opacity-70 transition-opacity">← Back to all guides</Link>
+        </div>
+
+      </div>
+    </main>
+  );
+}
