@@ -446,7 +446,7 @@ export default function FloorVisualizer() {
                 Book Private Estimate →
               </a>
               <div className="text-center text-[10px] text-[#6B6860] leading-relaxed">
-                <a href="tel:+17867085686" className="text-[#C8A96E] hover:underline">(786) 708-5686</a>{" · "}
+                <a href="tel:+14062824033" className="text-[#C8A96E] hover:underline">(786) 708-5686</a>{" · "}
                 <a href="mailto:hello@summitgaragefloors.com" className="text-[#C8A96E] hover:underline">hello@summitgaragefloors.com</a>
                 <br />Free estimate · 1–2 day install · Lifetime warranty
               </div>
