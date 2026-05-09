@@ -140,7 +140,8 @@ export default function Home() {
         </div>
       </section>
 
-      <FloorVisualizer / >section className="border-t border-white/10 px-6 py-20">
+      <FloorVisualizer />
+      <section className="border-t border-white/10 px-6 py-20">
         <div className="mx-auto max-w-7xl">
           <p className="text-sm uppercase tracking-[0.25em] text-gray-400">Serving Montana</p>
           <h2 className="mt-4 text-4xl font-bold md:text-5xl">Premium garage floor coatings for Montana luxury homes.</h2>
