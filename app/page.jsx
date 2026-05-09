@@ -32,6 +32,7 @@ export default function Home() {
             <a href="#process">Process</a>
             <a href="#pricing">Pricing</a>
             <a href="#quote">Estimate</a>
+            <a href="/blog" className="text-sm text-gray-300 hover:text-white transition-colors">Guide</a>
           </nav>
           <a href="#quote" className="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-black">Book Estimate</a>
         </div>
