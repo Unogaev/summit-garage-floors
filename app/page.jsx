@@ -176,7 +176,7 @@ export default function Home() {
             <h2 className="mt-4 text-4xl font-bold md:text-5xl">Tell us about your garage.</h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-300">Send your city, garage size, and a few photos. We'll help you choose a premium finish and estimate the right system for your home.</p>
             <div className="mt-8 text-gray-400">
-              Call/Text: <span className="text-white">(786) 708-5686</span><br />
+              Call/Text: <span className="text-white">(406) 282-4033</span><br />
               Email: <span className="text-white">hello@summitgaragefloors.com</span>
             </div>
           </div>
