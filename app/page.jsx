@@ -35,6 +35,9 @@ export default function Home() {
             <a href="/blog" className="text-sm text-gray-300 hover:text-white transition-colors">Guide</a>
           </nav>
           <a href="#quote" className="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-black">Book Estimate</a>
+        <a href="tel:+14062824033" className="hidden md:flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors">
+  (406) 282-4033
+</a>
         </div>
       </header>
 
